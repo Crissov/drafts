@@ -1,15 +1,13 @@
 <pre class='metadata'>
-Title: CSS Foo Module Level 1
-Shortname: css-foo
+Title: Semantic Selectors Level 1
+Shortname: selectors-semantic
 Level: 1
-Status: ED
+Status: Private Draft
 Group: csswg
-TR: https://www.w3.org/TR/css-foo/
-ED: https://drafts.csswg.org/css-foo/
+ED: https://drafts.csswg.org/selectors-semantic/
 Work Status: exploring
-Editor: Name1, Company1, http://example.com/contact
-Editor: Name2, Company2, name2@example.com
-Abstract: This module introduces the 'foo' property and related values, which do bar and baz.
+Editor: Christoph Päper, christoph.paeper@crissov.de
+Abstract: This module introduces several pseudo-classes to Selectors, which enable selecting Markdown elements.
 </pre>
 
 Introduction {#intro}
