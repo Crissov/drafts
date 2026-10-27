@@ -54,16 +54,10 @@ jobs:
             SHORT_DATE="$(date --date=@"$TIMESTAMP" --utc +%F)"
             bikeshed -f spec "$file" "${file%Overview.bs}index.html" --md-date="$SHORT_DATE" --md-Text-Macro="BUILTBYGITHUBCI foo"
           done
-      - name: Build issues lists
-        run: |
-          for file in ./**/*.bsi ./**/issues-*.txt; do
-            echo "  $file"
-            bikeshed issues-list "$file" || true
-          done
-      - name: Build markdown
-        run: python ./bin/build-markdown.py
-      - name: Build index & symlinks
-        run: python ./bin/build-index.py
+#      - name: Build markdown
+#        run: python ./bin/build-markdown.py
+#      - name: Build index & symlinks
+#        run: python ./bin/build-index.py
       - run: rm -rf ./.git{,attributes,ignore}
 
 
